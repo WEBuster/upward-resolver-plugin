@@ -23,7 +23,10 @@ var webpack = require('webpack')
 {
   plugins: [
     new webpack.ResolverPlugin([
-      new UpwardResolverPlugin(['+'])
+      new UpwardResolverPlugin({
+        syntax: ['+'],
+        dir: ['.']
+      })
     ])
   ]
 }

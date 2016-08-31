@@ -40,7 +40,9 @@ describe('upward-resolver-plugin', function () {
       entry: './test/fixtures/upward/a/b/c/file',
       plugins: [
         new webpack.ResolverPlugin([
-          new UpwardResolverPlugin('+')
+          new UpwardResolverPlugin({
+            syntax: '+'
+          })
         ])
       ]
     }, function (errors) {
@@ -55,6 +57,23 @@ describe('upward-resolver-plugin', function () {
       plugins: [
         new webpack.ResolverPlugin([
           new UpwardResolverPlugin('+')
+        ])
+      ]
+    }, function (errors) {
+      expect(errors).to.be.empty
+      done()
+    })
+  })
+
+  it('upward-resolve-with-dir', function (done) {
+    test({
+      entry: './test/fixtures/upward/a/b/c/with-dir',
+      plugins: [
+        new webpack.ResolverPlugin([
+          new UpwardResolverPlugin({
+            syntax: '+',
+            dir: ['d', '.']
+          })
         ])
       ]
     }, function (errors) {
