@@ -1,5 +1,5 @@
 {
-  "name": "upward-resolver-plugin",
+  "name": "upward-resolver-webpack-plugin",
   "version": "0.1.1",
   "description": "A webpack resolver plugin to upward resolve file.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WEBuster/upward-resolver-plugin.git"
+    "url": "git+https://github.com/WEBuster/upward-resolver-webpack-plugin.git"
   },
   "keywords": [
     "index",
@@ -18,9 +18,9 @@
   "author": "MopTym <moptym@163.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/WEBuster/upward-resolver-plugin/issues"
+    "url": "https://github.com/WEBuster/upward-resolver-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/WEBuster/upward-resolver-plugin#readme",
+  "homepage": "https://github.com/WEBuster/upward-resolver-webpack-plugin#readme",
   "dependencies": {
     "promise": "^7.1.1"
   },

@@ -1,1 +1,1 @@
-module.exports = require('./lib/upward-resolver-plugin')
+module.exports = require('./lib/upward-resolver-webpack-plugin')

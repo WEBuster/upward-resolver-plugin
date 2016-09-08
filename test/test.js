@@ -3,7 +3,7 @@ var rimraf = require('rimraf')
 var webpack = require('webpack')
 var expect = require('chai').expect
 
-describe('upward-resolver-plugin', function () {
+describe('upward-resolver-webpack-plugin', function () {
 
   var UpwardResolverPlugin = require('../')
   var outputDir = path.resolve(__dirname, './output')
